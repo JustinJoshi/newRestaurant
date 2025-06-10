@@ -22,11 +22,16 @@
         <link rel="stylesheet" href="css/swiper-bundle.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/slider.css">
+		<!-- Media Queries -->
+		<link rel="stylesheet" href="css/mediaQueries.css">
+		<!-- Search -->
 	</head>
 	<body>
+		<!-- First section -->
 		<section class='containerBG'>
 			<section class="containerNav">
 				<nav class="navC">
+					<img src="assets\logocapital1.png" class="logo" alt="">
 					<ul class="ulC">
 						<li>Home</li>
 						<li>About Us</li>
@@ -51,27 +56,63 @@
 				</main>
 			</section>
 			<section class="containerSearch">
-				<section class="searchBar">
-            		<div class="box">
-             			<input type="text" placeholder="Search Locations">
-              			<a href="#">
-                			<i class="fas fa-search"></i>
-               			</a>
-            		</div>	
-				</section>
-			
-				<section>
-					<ul class="list">
-						<li>
-							<img class="facebook" src="assets\restaurant-images\imgCopy\facebook.png" alt="">
-						</li>
-						<li>
-							<img class="instagram" src="assets\Instagram-Logo-2887919693.png" alt="">
-						</li>
-					</ul>
-				</section>
+				<form onsubmit="event.preventDefault();" role="search">
+  					<label for="search">Search for stuff</label>
+  					<input id="search" type="search" placeholder="Search..." autofocus required />
+  					<button type="submit">Go</button>    
+				</form>	
 			</section>
 		</section>
+
+	<!-- Mobile First Section -->
+
+		<section class="containerBGMobile">
+			<section class="containerNavMobile">
+				<nav class="navMobile">
+					<ul class="navListMobile">
+						<li>Home</li>	
+						<li>About Us</li>	
+						<li>Location</li>	
+						<li>Order Now</li>	
+					</ul>
+				</nav>
+				<section class="welcomeMobile">
+					<h1>Welcome To</h1>
+					<img class="logoMobile" src="assets\bubblesKitchenLogo.png" alt="">
+				</section>
+					<!-- <section class="BGCont"> -->
+						<img src="css/firstBGCopy.png" alt="" class="imgBGMobile">
+					<!-- </section> -->
+
+			</section>
+		</section>
+
+	<!-- Mobile Second Section -->
+
+		<section class="containerAboutUsMobile">
+			<section class="headerMobile">
+				<span>We're a</span>
+				<section class="smallRes">
+					<h1>Small Restaurant</h1> 
+					<h1>Based in<span class="newYork">New York</span> </h1>
+				</section>
+			</section>
+			<section class="crop1">
+				<img src="css\secondBGNewMobile.png" alt="" class="secondImgMobile">
+			</section>
+		</section>
+		
+<!-- Mobile Third Section -->
+
+		<section class="containerAboutUsMobile">
+			<section class="headerAboutUs">
+				<span>About Us</span>
+			</section>
+			<section class="blurbMobile">
+				<p>We started Bubbles Kitchen with just our small family. Established in 2015, we take pride in serving the community in out little corner of New York. We want to share our favorite new recipes with you!</p>
+			</section>
+		</section>
+
 		<section class="containerAboutUs">
 			<section class="containerAboutUsContent">
 				<span class="abtUsContent1">

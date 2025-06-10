@@ -44,8 +44,15 @@ html, body, .section-images {
 /*first section */
 
 .navC{
-  padding-right:1vw;
+  display: flex;
+  justify-content: space-between;
   font-family: 'Inter';
+  width: 100%;
+}
+
+.logo{
+width: auto;
+height: auto;
 }
 
 .navC ul *{
@@ -72,7 +79,7 @@ html, body, .section-images {
   background-position: center bottom;
   background-size: cover;
   width: 100%;
-  height:auto;
+  height:100vh;
   display: flex;
   align-items:start;
   justify-content:start;
@@ -175,7 +182,7 @@ main h2{
 .containerSearch{
   display: flex;
   justify-content: start;
-  padding:0 0 0 8vw;
+  padding:0 0 50px 8vw;
   flex-flow: column;
 }
 
@@ -248,15 +255,16 @@ justify-content: end;
   color: orange;
   background-image: url('newSecondBG.png');
   background-position: center bottom;
-  background-size: cover;
+  background-size:cover;
+  background-repeat: no-repeat;
   width: 100%;
-  height: auto;
+  height: 100vh;
   justify-content: center;
 }
 
 .containerAboutUsContent{
   width: 50%;
-  padding: 5vw 3vw 6vw 13vw;
+  padding: 5vh 0 0 20vh;
 }
 
 .abtUsContent{
@@ -294,7 +302,10 @@ justify-content: end;
 .btnCont{
   display: flex;
   width: auto;
+  height: auto;
+  padding: 40px 0 0 0;
 }
+
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
@@ -332,8 +343,7 @@ a {
 /*=============== BUTTON ===============*/
 .container {
   height: auto;
-  width: auto;
-  margin: 3vw 0 0 0;
+  display: grid;
   place-items: center;
 }
 
@@ -360,7 +370,7 @@ a {
 }
 
 .button__icon {
-  font-size: 5rem;
+  font-size: 1.5rem;
 }
 
 .button__text, 
@@ -519,6 +529,8 @@ a {
 .button:hover .button__triangle {
   transform: rotate(-12deg) scale(1.1);
 }
+
+
 /* Third Container */
 
 .containerOrderNow{
@@ -744,12 +756,17 @@ img8{
     justify-content: center;
     align-items: center;
   }
-  .containerBG, .containerAboutUs{
+  .containerAboutUs{
     background-position: 80% 80%;
   }
   .containerAboutUs{
-    background: url('secondMobile.png');
-    background-position: 40% 0;
+    background: url('secondBGNewMobile.png');
+    background-position: 35% 0;
+  }
+  .containerBG{
+    background-color: white;
+    background-position: 90% 10%;
+    background-size: auto;
   }
 }
 
